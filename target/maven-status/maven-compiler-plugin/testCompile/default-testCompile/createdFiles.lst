@@ -1,0 +1,5 @@
+Testng\PomPages\EbayHomePage.class
+Testng\PomSetup\EbaySetup.class
+Testng\PomPages\EbayElectronicsPage.class
+Testng\PomPages\EbaySportsPage.class
+Testng\PomPages\EbaySellPage.class
