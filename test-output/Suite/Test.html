@@ -55,45 +55,103 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 01 21:27:37 IST 2021</td>
+<td>Started on:</td><td>Mon Oct 04 21:25:40 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23426 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16500 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>sports </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Testng.PomSetup.EbaySetup.enter1_userDetails()'><b>enter1_userDetails</b><br>Test class: Testng.PomSetup.EbaySetup</td>
-<td></td>
-<td>3</td>
-<td>Testng.PomSetup.EbaySetup@3e27ba32</td></tr>
-<tr>
-<td title='Testng.PomSetup.EbaySetup.enter2_userDetails()'><b>enter2_userDetails</b><br>Test class: Testng.PomSetup.EbaySetup</td>
-<td></td>
-<td>3</td>
-<td>Testng.PomSetup.EbaySetup@3e27ba32</td></tr>
-<tr>
-<td title='Testng.PomSetup.EbaySetup.enter_userDetails()'><b>enter_userDetails</b><br>Test class: Testng.PomSetup.EbaySetup</td>
-<td></td>
-<td>8</td>
-<td>Testng.PomSetup.EbaySetup@3e27ba32</td></tr>
-<tr>
-<td title='Testng.PomSetup.EbaySetup.navigate_to_homepage_click_on_SearchBar()'><b>navigate_to_homepage_click_on_SearchBar</b><br>Test class: Testng.PomSetup.EbaySetup</td>
-<td></td>
-<td>3</td>
-<td>Testng.PomSetup.EbaySetup@3e27ba32</td></tr>
+<td title='Testng.PomSetup.EbaySetup.sportsPage()'><b>sportsPage</b><br>Test class: Testng.PomSetup.EbaySetup</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img width=&quot;250&quot; height=&quot;200&quot; style=&quot;clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0&quot; alt=&quot;eBay Logo&quot; src=&quot;https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png&quot; id=&quot;gh-logo&quot;&gt; is not clickable at point (91, 68). Other element would receive the click: &lt;a href=&quot;https://www.ebay.com/&quot; _sp=&quot;m570.l2586&quot; id=&quot;gh-la&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=94.0.4606.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KALPESH16&apos;, ip: &apos;192.168.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\kalpe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32f586599f5e96899efa35dfd3cb18c4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at Testng.PomPages.EbaySportsPage.logo(EbaySportsPage.java:26)
+	at Testng.PomSetup.EbaySetup.sportsPage(EbaySetup.java:52)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1851255134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1851255134'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img width=&quot;250&quot; height=&quot;200&quot; style=&quot;clip:rect(47px, 118px, 95px, 0px); position:absolute; top:-47px;left:0&quot; alt=&quot;eBay Logo&quot; src=&quot;https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png&quot; id=&quot;gh-logo&quot;&gt; is not clickable at point (91, 68). Other element would receive the click: &lt;a href=&quot;https://www.ebay.com/&quot; _sp=&quot;m570.l2586&quot; id=&quot;gh-la&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=94.0.4606.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KALPESH16&apos;, ip: &apos;192.168.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\kalpe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32f586599f5e96899efa35dfd3cb18c4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at Testng.PomPages.EbaySportsPage.logo(EbaySportsPage.java:26)
+	at Testng.PomSetup.EbaySetup.sportsPage(EbaySetup.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>Testng.PomSetup.EbaySetup@7161d8d1</td></tr>
 </table><p>
 </body>
 </html>

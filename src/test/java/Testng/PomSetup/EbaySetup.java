@@ -16,23 +16,23 @@ import Testng.PomPages.EbaySportsPage;
 public class EbaySetup {
 	WebDriver driver;
 
-	@BeforeTest
+	@BeforeTest(groups = {"sports", "electronics"})
 	public void setup() {
-	System.setProperty("webdriver.chrome.driver", "C:/Users/kalpe/eclipse-workspace/SeleniumProjectPOM/Driver/chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "/Users/kalpe/eclipse-workspace/SeleniumConcepts/Driver1/chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.get("https://www.ebay.com/");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = "electronics")
 	public void navigate_to_homepage_click_on_SearchBar() {
 	EbayHomePage objEbayHomePage = new EbayHomePage(driver);
 	objEbayHomePage.searchBar("apple");
 	objEbayHomePage.clickOnElectronics();
 	}
 
-	@Test(priority = 2)
-	public void enter_userDetails() {
+	@Test(priority = 2, groups = "electronics")
+	public void electronicsPage() {
 	EbayElectronicsPage objElectronicsPage = new EbayElectronicsPage(driver);
 	objElectronicsPage.searchElect("mobiles");
 	objElectronicsPage.clickOnSearch();
@@ -40,14 +40,14 @@ public class EbaySetup {
 	}
 	
 	@Test(priority = 3)
-	public void enter1_userDetails() {
+	public void sellPage() {
 	EbaySellPage objsellPage = new EbaySellPage(driver);
 	objsellPage.clickOnSell();
 	objsellPage.listAnItem();
 	}
 	
-	@Test(priority = 4)
-	public void enter2_userDetails() {
+	@Test(priority = 4, groups = "sports")
+	public void sportsPage() {
 		EbaySportsPage objEbaySportsPage = new EbaySportsPage(driver);
 		objEbaySportsPage.logo();
 		objEbaySportsPage.searchSports("SportsShoes");

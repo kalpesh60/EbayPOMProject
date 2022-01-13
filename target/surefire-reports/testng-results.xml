@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-01T16:07:49Z" name="Suite" finished-at="2021-10-01T16:08:16Z" duration-ms="27305">
+  <suite started-at="2022-01-13T16:56:11Z" name="Suite" finished-at="2022-01-13T16:56:25Z" duration-ms="14013">
     <groups>
+      <group name="electronics">
+        <method signature="EbaySetup.electronicsPage()[pri:2, instance:Testng.PomSetup.EbaySetup@125290e5]" name="electronicsPage" class="Testng.PomSetup.EbaySetup"/>
+        <method signature="EbaySetup.navigate_to_homepage_click_on_SearchBar()[pri:1, instance:Testng.PomSetup.EbaySetup@125290e5]" name="navigate_to_homepage_click_on_SearchBar" class="Testng.PomSetup.EbaySetup"/>
+      </group> <!-- electronics -->
     </groups>
-    <test started-at="2021-10-01T16:07:49Z" name="Test" finished-at="2021-10-01T16:08:16Z" duration-ms="27305">
+    <test started-at="2022-01-13T16:56:11Z" name="Test" finished-at="2022-01-13T16:56:25Z" duration-ms="14013">
       <class name="Testng.PomSetup.EbaySetup">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testng.PomSetup.EbaySetup@12a94400]" started-at="2021-10-01T16:07:49Z" name="setup" finished-at="2021-10-01T16:07:53Z" duration-ms="3765" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testng.PomSetup.EbaySetup@125290e5]" started-at="2022-01-13T16:56:11Z" name="setup" finished-at="2022-01-13T16:56:18Z" duration-ms="6137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigate_to_homepage_click_on_SearchBar()[pri:1, instance:Testng.PomSetup.EbaySetup@12a94400]" started-at="2021-10-01T16:07:53Z" name="navigate_to_homepage_click_on_SearchBar" finished-at="2021-10-01T16:07:56Z" duration-ms="3364" status="PASS">
+        <test-method signature="navigate_to_homepage_click_on_SearchBar()[pri:1, instance:Testng.PomSetup.EbaySetup@125290e5]" started-at="2022-01-13T16:56:18Z" name="navigate_to_homepage_click_on_SearchBar" finished-at="2022-01-13T16:56:21Z" duration-ms="3845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigate_to_homepage_click_on_SearchBar -->
-        <test-method signature="enter_userDetails()[pri:2, instance:Testng.PomSetup.EbaySetup@12a94400]" started-at="2021-10-01T16:07:56Z" name="enter_userDetails" finished-at="2021-10-01T16:08:05Z" duration-ms="8450" status="PASS">
+        <test-method signature="electronicsPage()[pri:2, instance:Testng.PomSetup.EbaySetup@125290e5]" started-at="2022-01-13T16:56:21Z" name="electronicsPage" finished-at="2022-01-13T16:56:25Z" duration-ms="3991" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enter_userDetails -->
-        <test-method signature="enter1_userDetails()[pri:3, instance:Testng.PomSetup.EbaySetup@12a94400]" started-at="2021-10-01T16:08:05Z" name="enter1_userDetails" finished-at="2021-10-01T16:08:08Z" duration-ms="3677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enter1_userDetails -->
-        <test-method signature="enter2_userDetails()[pri:4, instance:Testng.PomSetup.EbaySetup@12a94400]" started-at="2021-10-01T16:08:08Z" name="enter2_userDetails" finished-at="2021-10-01T16:08:12Z" duration-ms="3888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enter2_userDetails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Testng.PomSetup.EbaySetup@12a94400]" started-at="2021-10-01T16:08:12Z" name="closeBrowser" finished-at="2021-10-01T16:08:16Z" duration-ms="4139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
+        </test-method> <!-- electronicsPage -->
       </class> <!-- Testng.PomSetup.EbaySetup -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
