@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <groups>
+    
         <run>
             <include name="electronics" />
         </run>
