@@ -10,6 +10,5 @@
     <classes>
       <class name="Testng.PomSetup.EbaySetup"/>
     </classes>
-    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
