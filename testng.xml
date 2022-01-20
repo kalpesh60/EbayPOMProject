@@ -8,7 +8,6 @@
         </run>
     </groups>
     <classes>
-      
       <class name="Testng.PomSetup.EbaySetup"/>
     </classes>
   </test> <!-- Test -->
