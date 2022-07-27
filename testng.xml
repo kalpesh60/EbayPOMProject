@@ -6,6 +6,8 @@
         <run>
             <include name="electronics" />
         </run>
+    
+    
     </groups>
     <classes>
       <class name="Testng.PomSetup.EbaySetup"/>
